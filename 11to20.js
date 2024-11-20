@@ -40,3 +40,15 @@ function solution(arr) {
 
     return sumMean
 }
+
+
+// 자릿수 더하기
+
+function solution(n) {
+    let answer = 0
+    n = n.toString();
+    for (let i of n) {
+        answer += Number(i);
+        
+    }return answer;
+}
