@@ -90,3 +90,12 @@ function solution(x, n) {
     }
     return answer;
 }
+
+
+// 문자열을 정수로 변환
+
+function solution(s) {
+    var answer = 0;
+    answer += parseInt(s)
+    return answer;
+}
