@@ -99,3 +99,13 @@ function solution(s) {
     answer += parseInt(s)
     return answer;
 }
+
+
+// 자연수 뒤집어 배열만들기
+
+function solution(n) {
+    var answer = [];
+    let arr = String(n).split("").reverse().map(Number);
+    answer = arr;
+    return answer;
+}
