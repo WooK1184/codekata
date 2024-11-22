@@ -1,4 +1,4 @@
-// 21. 내림차순 정렬
+// 20. 내림차순 정렬
 
 function solution(n) {
     let answer = 0;
@@ -14,3 +14,16 @@ function solution(n) {
     } answer = Number(j.join(''))
     return answer;
 }
+
+
+// 21. 하샤드 수
+
+function solution(x) {
+    let k = x.toString().split("");
+    let n = Number(k[0]) + Number(k[1])
+    if ( x % n === 0) {
+        return true
+    } else {
+        return false
+    }
+} 
