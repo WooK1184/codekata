@@ -20,10 +20,12 @@ function solution(n) {
 
 function solution(x) {
     let k = x.toString().split("");
-    let n = Number(k[0]) + Number(k[1])
-    if ( x % n === 0) {
+    let sum = 0;
+    for (i = 0; i < k.length; i++) {
+        sum += Number(k[i]);
+    } if (x % sum == 0) {
         return true
     } else {
         return false
     }
-} 
+}
