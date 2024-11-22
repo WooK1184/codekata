@@ -29,3 +29,17 @@ function solution(x) {
         return false
     }
 }
+
+
+// 22. 두 정수 사이의 합
+
+function solution(a, b) {
+    var answer = 0;
+    let sum = 0;
+    const start = Math.min(a, b)
+    const end = Math.max(a, b)
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }answer = sum;
+    return answer;
+}
