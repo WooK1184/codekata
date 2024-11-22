@@ -109,3 +109,17 @@ function solution(n) {
     answer = arr;
     return answer;
 }
+
+
+// 정수의 제곱근
+
+function solution(n) {
+    var answer = 0;
+    let j = Math.sqrt(n)
+    if (Number.isInteger(j)) {
+        answer += (j + 1) ** 2
+    } else {
+        answer = -1
+    }
+    return answer
+}
