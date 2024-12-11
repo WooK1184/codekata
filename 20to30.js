@@ -99,3 +99,15 @@ function solution(absolutes, signs) {
         }
     } return answer
 }
+
+// 27 문자열 내 마음대로 정렬하기
+
+const solution = (strings, n) => {
+    let a = strings.map(str => str[n] + str);
+    
+    a.sort();
+
+    let result = a.map(str => str.slice(1))
+
+    return result
+}
